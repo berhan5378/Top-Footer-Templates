@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    min-height: 100vh; 
+}
+footer {
+    position: relative;
+    background: #17202a; 
+    padding: 10rem 1rem 2rem;
+    width: 100%;  
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.footer-get-start {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background: #d7bde2;
+    padding: 1rem 2rem;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+.footer-get-start h3{
+    font-size: 1.8rem;
+}
+.footer-get-start .btn {
+    --color: #8540f5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    border: none;
+    background-color: transparent;
+  }
+  
+.footer-get-start .btn div {
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: var(--color);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+  }
+  
+.footer-get-start .btn::before {
+    content: '';
+    z-index: -1;
+    background-color: var(--color);
+    border: 2px solid white;
+    border-radius: 2rem;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(10deg);
+    transition: .5s;
+    opacity: 0.2;
+  }
+  
+.footer-get-start .btn:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+  }
+  
+.footer-get-start .btn:hover::before {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  
+.footer-get-start .btn svg {
+    transform: translateX(-200%);
+    transition: .5s;
+    width: 0;
+    opacity: 0;
+  }
+  
+.footer-get-start .btn:hover svg {
+    width: 25px;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+.footer-get-start .btn:active {
+    filter: brightness(1.4);
+  }
+  .footer-contents{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-contents .header{
+    font-size: 1.1rem;
+    padding-bottom: .3rem;
+    color: #ecf0f1;
+}
+.footer-contents .logo{
+    font-size: 1.5rem; 
+}
+.footer-contents .logo + li {
+    color: #808b96;
+}
+.footer-contents li a{
+    display: flex;
+    color: #808b96;
+    padding: .2rem 0; 
+    font-size: 1rem; 
+    text-decoration: none;
+}
+.footer-contents li a:hover{
+    color: #abb2b9;
+}
+
+.footer-contents .Follow-us{
+    text-align: center; 
+}
+.footer-contents .Follow-us li {
+    margin-bottom: 1rem;
+}
+.footer-contents .main {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+.footer-contents .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+.footer-contents .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+.footer-contents .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+.footer-contents .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+.footer-contents .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+.footer-contents .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+.footer-contents .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+.footer-contents .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+.footer-contents .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+.footer-contents .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+.footer-contents .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+.footer-contents .card1:hover .instagram {
+    fill: white;
+  }
+  
+.footer-contents .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+.footer-contents .card2:hover .twitter {
+    fill: white;
+  }
+  
+.footer-contents .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+.footer-contents .card3:hover .github {
+    fill: white;
+  }
+  
+.footer-contents .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+.footer-contents .card4:hover .discord {
+    fill: white;
+  }
+  @media (max-width: 720px) {
+      .footer-get-start {
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          gap: 1.3rem; 
+      }
+      .footer-get-start h3{
+          font-size: 1.6rem;
+      }
+  }
+  @media (max-width: 636px) {
+      .footer-get-start {  
+          padding: 1rem .8rem;
+          top: -45px;
+      } 
+      .footer-contents {
+          margin-top: 1rem;
+      }
+      footer{
+        margin-top: 10rem;
+      }
+  }
