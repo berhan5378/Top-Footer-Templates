@@ -169,11 +169,21 @@ footer ul {
        top: -80px;
   }
 }
-@media (max-width: 459px) {
+@media (max-width: 460px) {
   .footer-get-start {
        top: -140px;
   } 
   footer {
    margin-top: 10rem;
+  } 
+  .footer-contents-top {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 1.2rem;
   }
+}
+@media (max-width: 332px) {
+  .footer-get-start {
+    top: -160px;
+} 
 }
