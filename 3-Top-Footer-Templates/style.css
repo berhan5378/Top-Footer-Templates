@@ -10,9 +10,7 @@
     min-height: 100vh; 
     background: #ecf0f1;
   }
-  footer {
-    margin: 0 4rem 8rem;
-    border-radius: 10px;
+  footer { 
     position: relative;
     background: #FFFFFF; 
     padding: 5rem 0;
